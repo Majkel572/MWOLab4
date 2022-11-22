@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\MWOLab4-AzurePipeline.props" />
+</Project>

@@ -7,4 +7,12 @@
     <RootNamespace>MWOLab4_AzurePipeline</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="app\versions.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="app\versions.txt" />
+  </ItemGroup>
+
 </Project>
