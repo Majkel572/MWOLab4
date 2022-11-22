@@ -1,0 +1,7 @@
+C:\Users\mikul\Desktop\MWOlab4\MWOLab4\MWOLab4-AzurePipeline\MWOLab4-AzurePipeline\obj\Release\net6.0\PubTmp\Out\MWOLab4-AzurePipeline.exe
+C:\Users\mikul\Desktop\MWOlab4\MWOLab4\MWOLab4-AzurePipeline\MWOLab4-AzurePipeline\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\mikul\Desktop\MWOlab4\MWOLab4\MWOLab4-AzurePipeline\MWOLab4-AzurePipeline\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\mikul\Desktop\MWOlab4\MWOLab4\MWOLab4-AzurePipeline\MWOLab4-AzurePipeline\obj\Release\net6.0\PubTmp\Out\MWOLab4-AzurePipeline.dll
+C:\Users\mikul\Desktop\MWOlab4\MWOLab4\MWOLab4-AzurePipeline\MWOLab4-AzurePipeline\obj\Release\net6.0\PubTmp\Out\MWOLab4-AzurePipeline.deps.json
+C:\Users\mikul\Desktop\MWOlab4\MWOLab4\MWOLab4-AzurePipeline\MWOLab4-AzurePipeline\obj\Release\net6.0\PubTmp\Out\MWOLab4-AzurePipeline.runtimeconfig.json
+C:\Users\mikul\Desktop\MWOlab4\MWOLab4\MWOLab4-AzurePipeline\MWOLab4-AzurePipeline\obj\Release\net6.0\PubTmp\Out\MWOLab4-AzurePipeline.pdb
