@@ -35,9 +35,9 @@ jobs:
       run: dotnet publish ./MWOLab4-AzurePipeline -c Release -o ${{ env.DOTNET_ROOT }}/app
     - name: CreateVersionFile
       run: |
-          echo ${{ github.run_number }} > ${{env.DOTNET_ROOT }}/app/version.txt
+          echo ${{ github.run_number }} > ${{env.DOTNET_ROOT }}/app/versions.txt
           ls -l ${{ env.DOTNET_ROOT }}/app/
-          cat ${{ env.DOTNET_ROOT }}/app/version.txt
+          cat ${{ env.DOTNET_ROOT }}/app/versions.txt
     - name: Upload artifact 
       uses: actions/upload-artifact@v3.1.1
       with:
