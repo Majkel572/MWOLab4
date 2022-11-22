@@ -1,0 +1,46 @@
+name: deploy
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches: 
+      - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET Core SDK
+      uses: actions/setup-dotnet@v3.0.3
+      with:
+        dotnet-version: 6.0.100
+    - name: Output Run ID
+      run: echo ${{ github.run_id }}
+    - name: Output Run Number
+      run: echo ${{ github.run_number }}
+    - name: Output Run Attempt
+      run: echo ${{ github.run_attempt }}
+    - name: Restore dependnces
+      run: dotnet restore ./MWOLab4-AzurePipeline
+    - name: Build
+      run: dotnet build --no-restore ./MWOLab4-AzurePipeline
+    - name: Test
+      run: dotnet test ./MWOLab4-AzurePipeline
+    - name: Publish
+      run: dotnet publish ./MWOLab4-AzurePipeline -c Release -o ${{ env.DOTNET_ROOT }}/app
+    - name: CreateVersionFile
+      run: |
+          echo ${{ github.run_number }} > ${{env.DOTNET_ROOT }}/app/version.txt
+          ls -l ${{ env.DOTNET_ROOT }}/app/
+          cat ${{ env.DOTNET_ROOT }}/app/version.txt
+    - name: Upload artifact 
+      uses: actions/upload-artifact@v3.1.1
+      with:
+        name: MWOLab4-AzurePipeline-artifact
+        path: ${{env.DOTNET_ROOT }}/app/*
+        if-no-files-found: error
