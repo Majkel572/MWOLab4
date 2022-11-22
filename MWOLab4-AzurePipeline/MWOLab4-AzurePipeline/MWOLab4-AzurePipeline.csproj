@@ -8,11 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="app\versions.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="app\versions.txt" />
+    <Folder Include="app\" />
   </ItemGroup>
 
 </Project>

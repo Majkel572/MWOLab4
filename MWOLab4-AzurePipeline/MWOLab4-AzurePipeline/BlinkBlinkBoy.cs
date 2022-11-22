@@ -7,7 +7,7 @@ namespace MWOLab4_AzurePipeline {
 
         public BlinkBlinkBoy(ILogger<BlinkBlinkBoy> _logger) {
             this.logger = _logger;
-            string versionFile = "versions.txt";
+            string versionFile = "app/versions.txt";
             string? versionText = null;
             if (System.IO.File.Exists(versionFile)) {
                 versionText = System.IO.File.ReadAllText(versionFile);
