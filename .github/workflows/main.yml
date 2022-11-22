@@ -53,7 +53,7 @@ jobs:
       url: https://mwolab4-azurepipeline.azurewebsites.net/
     steps:
      - name: Download a Build Artifact
-       uses: actions/download-artiface@v3.0.1
+       uses: actions/download-artifact@v3.0.1
        with:
          name: MWOLab4-AzurePipeline-artifact
      - name: Azure WebApp
@@ -70,7 +70,7 @@ jobs:
       url: https://mwolab4-azurepipelineprod.azurewebsites.net/
     steps:
      - name: Download a Build Artifact
-       uses: actions/download-artiface@v3.0.1
+       uses: actions/download-artifact@v3.0.1
        with:
          name: MWOLab4-AzurePipeline-artifact
      - name: Azure WebApp
