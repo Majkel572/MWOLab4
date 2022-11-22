@@ -50,7 +50,7 @@ jobs:
     needs: build
     environment:
       name: 'Developer'
-      url: https://mwolab4-azurepipelinedev.azurewebsites.net/
+      url: https://mwolab4-azurepipeline.azurewebsites.net/
     steps:
      - name: Download a Build Artifact
        uses: actions/download-artiface@v3.0.1
@@ -59,8 +59,8 @@ jobs:
      - name: Azure WebApp
        uses: Azure/webapps-deploy@v2
        with: 
-          app-name: MWOLab4-AzurePipelineDev
-          publish-profile: ${{ secrets.WEBPROD }}
+          app-name: MWOLab4-AzurePipeline
+          publish-profile: ${{ secrets.WEBDEV }}
   
   deploy-prod:
     runs-on: ubuntu-latest
